@@ -17,3 +17,8 @@ Service Details - phone, multiple lines, internet, online backup, online securit
 Account Information - subscription tenure, contract, monthly charges, total charges, paperless billing, payment method  
 
 Data Source: https://www.kaggle.com/blastchar/telco-customer-churn
+
+## B. Preprocessing
+- Cleaning - removal of the null values, assigning appropriate data types to variables  
+- Encoding categorical variables using one hot encoding  
+- Splitting the dataset into test and train and converting these dataframes into data matrices  
