@@ -1,1 +1,1 @@
-# Hyperparamter Tuning - XGBoost | Churn Prediction - Telecommunication
+# XGBoost Hyperparamter Tuning - Churn Prediction
