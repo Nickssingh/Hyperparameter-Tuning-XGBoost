@@ -78,7 +78,7 @@ max_depth = 2 and min_child_weight = 19
 
 b. *Parameters*: subsample and colsample  
 
-![](Hyperparameter_tuning_images/subsample_gridsearch.png)  
+![](Hyperparameter_tuning_images/subsample_gridsearch_output.png)  
 ![](Hyperparameter_tuning_images/subsample_output1.png)  
 ![](Hyperparameter_tuning_images/subsample_output2.png)  
 ![](Hyperparameter_tuning_images/subsample_update.png)  
