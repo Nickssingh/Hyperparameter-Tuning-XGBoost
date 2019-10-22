@@ -44,7 +44,8 @@ Ideal case would include an exhaustive gridsearch will all the paramaters, but s
 
 More information on the aforementioned and other parameters can be found [here](https://xgboost.readthedocs.io/en/latest/parameter.html).  
 
-1. Converting dataframes into data matrix  
+1. Converting dataframes into data matrix   
+
 DMatrix – XGBoost uses data matrix to improve speed and memory efficiency. Hence we have converted the dataframes into data matrices. 
 
 More info on data matrix can be found [here](https://xgboost.readthedocs.io/en/latest/python/python_api.html).  
@@ -57,3 +58,11 @@ Finding a suitable evidence to stop iterations is important; it prevents both ov
 
 The logloss value is 0.424. We will tune the parameters to decrease logloss.  
 
+3. Tuning the parameters  
+
+a. Parameters: max_depth and min_child weight  
+
+We have used cross validation to tune the parameters within the params dictionary. Through multiple iterations, I realized that the optimum values for max_depth and min_child_weight lies in the specified range.  
+
+We updated the two parameters with the values producing the lowest logloss.  
+max_depth = 2 and min_child_weight = 19  
