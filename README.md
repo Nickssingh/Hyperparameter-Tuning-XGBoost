@@ -22,3 +22,6 @@ Data Source: https://www.kaggle.com/blastchar/telco-customer-churn
 - Cleaning - removal of the null values, assigning appropriate data types to variables  
 - Encoding categorical variables using one hot encoding  
 - Splitting the dataset into test and train and converting these dataframes into data matrices  
+
+[I'm an inline-style link](https://www.google.com)
+For more information on data cleaning and visualization, please look at my [previous analysis](https://github.com/Nickssingh/Churn-Prediction-Model-Telecommunication) of the same dataset.  
