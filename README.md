@@ -42,4 +42,6 @@ Ideal case would include an exhaustive gridsearch will all the paramaters, but s
 -	*colsample_bytree*: It is the ratio of the columns used in tree construction. 
 -	*eta*: It is the learning rate. Higher values make boosting process conservative by shrinking the weights of the features and prevents overfitting.
 
+More information on the aforementioned and other parameters can be found [here](https://xgboost.readthedocs.io/en/latest/parameter.html).  
 
+1. Converting dataframes into data matrix
