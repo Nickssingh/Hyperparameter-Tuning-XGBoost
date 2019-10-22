@@ -78,7 +78,7 @@ max_depth = 2 and min_child_weight = 19
 
 b. *Parameters*: subsample and colsample  
 
-![](Hyperparameter_tuning_images/subsample_gridsearch_output.png)  
+![](Hyperparameter_tuning_images/subsample_gridsearch.png)  
 ![](Hyperparameter_tuning_images/subsample_output1.png)  
 ![](Hyperparameter_tuning_images/subsample_output2.png)  
 ![](Hyperparameter_tuning_images/subsample_update.png)  
@@ -88,7 +88,7 @@ Subsample = 0.9 and colsample = 0.4
 
 c. *Parameter*: eta
 
-![](Hyperparameter_tuning_images/eta_gridsearch.png)  
+![](Hyperparameter_tuning_images/eta_gridsearch_output.png)  
 ![](Hyperparameter_tuning_images/eta_update.png)  
 
 We used the same process to update eta value.  
