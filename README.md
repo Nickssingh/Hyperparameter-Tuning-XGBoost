@@ -66,3 +66,27 @@ We have used cross validation to tune the parameters within the params dictionar
 
 We updated the two parameters with the values producing the lowest logloss.  
 max_depth = 2 and min_child_weight = 19  
+
+b. Parameters: subsample and colsample  
+
+Here we followed the process we used for the first two parameters and updated the parameters.  
+Subsample = 0.9 and colsample = 0.4  
+
+c. Parameter: eta
+
+We used the same process to update eta value.  
+eta = 0.3  
+
+4.	Building model with tuned parameters and finding its logloss value  
+
+We defined a new parameter dictionary with optimum values.  
+
+Finally, we developed a new model with new parameter values. Calculated its logloss and the number of rounds required to reach the lowest logloss value.  
+
+We needed 27 iterations to achieve the best result and the improvement was marginal; the logloss value of the model with default values was 0.424 and after tuning, we achieved 0.417. Though the improvement was marginal, we were able to understand hyperparameter tuning process.  
+
+we have used only a few combination of parameters. We could have further improved the impact of tuning; however, doing so would be computationally more expensive. More combination of parameters and wider ranges of values for each of those paramaters would have to be tested.  
+
+
+
+
