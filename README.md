@@ -45,5 +45,15 @@ Ideal case would include an exhaustive gridsearch will all the paramaters, but s
 More information on the aforementioned and other parameters can be found [here](https://xgboost.readthedocs.io/en/latest/parameter.html).  
 
 1. Converting dataframes into data matrix  
-DMatrix – XGBoost uses data matrix to improve speed and memory efficiency. Hence we have converted the dataframes into data matrices.  
-More info on data matrix can be found [here](https://xgboost.readthedocs.io/en/latest/python/python_api.html).
+DMatrix – XGBoost uses data matrix to improve speed and memory efficiency. Hence we have converted the dataframes into data matrices. 
+
+More info on data matrix can be found [here](https://xgboost.readthedocs.io/en/latest/python/python_api.html).  
+
+2. Building model with default parameters and finding its logloss value  
+
+We have used the default values for parameters and our eval_metric is logloss function. Here we had num_boost_rounds = 100 and early_stopping_rounds = 10; these values could be much larger – producing better results but at the expense of high resource consumption.  
+
+Finding a suitable evidence to stop iterations is important; it prevents both overfitting and inefficienct utilization of resources. Here we found that the tenth round gave the best result; the results after that round did not improve – hence the iteration stopped within 10 rounds after the best result.  
+
+The logloss value is 0.424. We will tune the parameters to decrease logloss.  
+
