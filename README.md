@@ -39,7 +39,7 @@ Ideal case would include an exhaustive gridsearch will all the paramaters, but s
 -	*max_depth*: Depth of a tree is distance between the root and the leaf furthest from the root. Model becomes more complex and tends to overfit as this value increases. Also, memory consumption increases with increase in tree depth.
 -	*min_child_weight*: This is used to control the partitioning of tree as it impacts splits within the tree. If a node has sum of instance weight less the minimum specified, then the process will not partition that node. 
 -	*Subsample*: It is the proportion of the data randomly sampled by XGBoost. 
--	*colsample_bytree*: It is the ratio of the columns used in tree construction. 
+-	*colsample_bytree*: It is the ratio of the number of columns used in tree construction. 
 -	*eta*: It is the learning rate. Higher values make boosting process conservative by shrinking the weights of the features and prevents overfitting.
 
 More information on the aforementioned and other parameters can be found [here](https://xgboost.readthedocs.io/en/latest/parameter.html).  
