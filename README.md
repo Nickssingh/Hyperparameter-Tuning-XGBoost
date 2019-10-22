@@ -23,7 +23,7 @@ Data Source: https://www.kaggle.com/blastchar/telco-customer-churn
 - Encoding categorical variables using one hot encoding  
 - Splitting the dataset into test and train and converting these dataframes into data matrices  
 
-For more information on data cleaning and visualization, please look at my [previous analysis](https://github.com/Nickssingh/Churn-Prediction-Model-Telecommunication) on the same dataset.  
+For more information on data cleaning and visualization, please go through my [previous analysis](https://github.com/Nickssingh/Churn-Prediction-Model-Telecommunication) on the same dataset.  
 
 ## D. Building Model
 
@@ -46,11 +46,15 @@ More information on the aforementioned and other parameters can be found [here](
 
 1. Converting dataframes into data matrix   
 
+![](Hyperparameter-tuning-XGBoost/DMatrix.png)  
+
 DMatrix – XGBoost uses data matrix to improve speed and memory efficiency. Hence we have converted the dataframes into data matrices. 
 
 More info on data matrix can be found [here](https://xgboost.readthedocs.io/en/latest/python/python_api.html).  
 
 2. Building model with default parameters and finding its logloss value  
+
+![](Hyperparameter-tuning-XGBoost/Model_default_params.png)  
 
 We have used the default values for parameters and our eval_metric is logloss function. Here we had num_boost_rounds = 100 and early_stopping_rounds = 10; these values could be much larger – producing better results but at the expense of high resource consumption.  
 
@@ -62,31 +66,45 @@ The logloss value is 0.424. We will tune the parameters to decrease logloss.
 
 a. Parameters: max_depth and min_child weight  
 
+![](Hyperparameter-tuning-XGBoost/max_depth_gridsearch.png)  
+![](Hyperparameter-tuning-XGBoost/max_depth_output.png)  
+
 We have used cross validation to tune the parameters within the params dictionary. Through multiple iterations, I realized that the optimum values for max_depth and min_child_weight lies in the specified range.  
+
+![](Hyperparameter-tuning-XGBoost/max_depth_update.png)  
 
 We updated the two parameters with the values producing the lowest logloss.  
 max_depth = 2 and min_child_weight = 19  
 
 b. Parameters: subsample and colsample  
 
+![](Hyperparameter-tuning-XGBoost/subsample_gridsearch.png)  
+![](Hyperparameter-tuning-XGBoost/subsample_output1.png)  
+![](Hyperparameter-tuning-XGBoost/subsample_output2.png)  
+![](Hyperparameter-tuning-XGBoost/subsample_update.png)  
+
 Here we followed the process we used for the first two parameters and updated the parameters.  
 Subsample = 0.9 and colsample = 0.4  
 
 c. Parameter: eta
+
+![](Hyperparameter-tuning-XGBoost/eta_gridsearch.png)  
+![](Hyperparameter-tuning-XGBoost/eta_update.png)  
 
 We used the same process to update eta value.  
 eta = 0.3  
 
 4.	Building model with tuned parameters and finding its logloss value  
 
+![](Hyperparameter-tuning-XGBoost/new_params.png)  
+
 We defined a new parameter dictionary with optimum values.  
+
+![](Hyperparameter-tuning-XGBoost/new_model.png)  
+![](Hyperparameter-tuning-XGBoost/new_model_output.png)  
 
 Finally, we developed a new model with new parameter values. Calculated its logloss and the number of rounds required to reach the lowest logloss value.  
 
 We needed 27 iterations to achieve the best result and the improvement was marginal; the logloss value of the model with default values was 0.424 and after tuning, we achieved 0.417. Though the improvement was marginal, we were able to understand hyperparameter tuning process.  
 
-we have used only a few combination of parameters. We could have further improved the impact of tuning; however, doing so would be computationally more expensive. More combination of parameters and wider ranges of values for each of those paramaters would have to be tested.  
-
-
-
-
+we have used only a few combination of parameters. We could have further improved the impact of tuning; however, doing so would be computationally more expensive. More combination of parameters and wider ranges of values for each of those paramaters would have to be tested.   
