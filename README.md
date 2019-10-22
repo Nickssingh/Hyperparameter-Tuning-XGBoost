@@ -8,10 +8,10 @@ XGBoost is an effective machine learning algorithm; it outperforms many other al
 ## B. Dataset
 The focus of the dataset is on customer attrition within the telecommunication industry. The data is of a telecom service provider. Such type of data is often used by organizations to build prediction models, and companies use the models to identify customers who can discontinue services. Following are the variables in the dataset.
 
-*Target Variable*
+*Target Variable*..
 Churn - Customers who discontinued services with last month
 
-*Input Variables*
+*Input Variables*..
 Demographic Information - age, gender, partner, and dependents
 Service Details - phone, multiple lines, internet, online backup, online security, tech support, device protection, and streaming
 Account Information - subscription tenure, contract, monthly charges, total charges, paperless billing, payment method
