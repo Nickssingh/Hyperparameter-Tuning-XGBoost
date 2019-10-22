@@ -44,4 +44,6 @@ Ideal case would include an exhaustive gridsearch will all the paramaters, but s
 
 More information on the aforementioned and other parameters can be found [here](https://xgboost.readthedocs.io/en/latest/parameter.html).  
 
-1. Converting dataframes into data matrix
+1. Converting dataframes into data matrix  
+DMatrix – XGBoost uses data matrix to improve speed and memory efficiency. Hence we have converted the dataframes into data matrices.  
+More info on data matrix can be found [here](https://xgboost.readthedocs.io/en/latest/python/python_api.html).
