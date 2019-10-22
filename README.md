@@ -64,7 +64,7 @@ The logloss value is 0.424. We will tune the parameters to decrease logloss.
 
 3. Tuning the parameters  
 
-a. Parameters: max_depth and min_child weight  
+a. *Parameters*: max_depth and min_child weight  
 
 ![](Hyperparameter_tuning_images/max_depth_gridsearch.png)  
 ![](Hyperparameter_tuning_images/max_depth_output.png)  
@@ -76,7 +76,7 @@ We have used cross validation to tune the parameters within the params dictionar
 We updated the two parameters with the values producing the lowest logloss.  
 max_depth = 2 and min_child_weight = 19  
 
-b. Parameters: subsample and colsample  
+b. *Parameters*: subsample and colsample  
 
 ![](Hyperparameter_tuning_images/subsample_gridsearch.png)  
 ![](Hyperparameter_tuning_images/subsample_output1.png)  
@@ -86,7 +86,7 @@ b. Parameters: subsample and colsample
 Here we followed the process we used for the first two parameters and updated the parameters.  
 Subsample = 0.9 and colsample = 0.4  
 
-c. Parameter: eta
+c. *Parameter*: eta
 
 ![](Hyperparameter_tuning_images/eta_gridsearch.png)  
 ![](Hyperparameter_tuning_images/eta_update.png)  
