@@ -46,7 +46,7 @@ More information on the aforementioned and other parameters can be found [here](
 
 1. Converting dataframes into data matrix   
 
-![](Hyperparameter-tuning-images/DMatrix.png)  
+![](Hyperparameter-tuning-images/DMatrix.png)
 
 DMatrix – XGBoost uses data matrix to improve speed and memory efficiency. Hence we have converted the dataframes into data matrices. 
 
