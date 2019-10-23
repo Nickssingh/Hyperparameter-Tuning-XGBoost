@@ -23,7 +23,7 @@ Data Source: https://www.kaggle.com/blastchar/telco-customer-churn
 - Encoding categorical variables using one hot encoding  
 - Splitting the dataset into test and train and converting these dataframes into data matrices  
 
-For more information on data cleaning and visualization, please go through my [previous analysis](https://github.com/Nickssingh/Churn-Prediction-Model-Telecommunication) on the same dataset.  
+For more information on data cleaning, visualization, and other algorithms, please go through my [previous analysis](https://github.com/Nickssingh/Churn-Prediction-Model-Telecommunication) on the same dataset.  
 
 ## D. Building Model
 
